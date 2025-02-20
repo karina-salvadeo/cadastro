@@ -1,11 +1,12 @@
 <html>
+<head> 
 <body>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST["name"]);
+    $nome = htmlspecialchars($_POST["nome"]);
     $email = htmlspecialchars($_POST["email"]);
-    echo "Bem-vindo(a) $name !<br>";
+    echo "Bem-vindo(a) $nome !<br>";
     echo "Seu endereço de email registrado é: $email";
 } else {
     echo "Nenhum dado recebido.";
@@ -13,4 +14,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 </body>
+</head>
 </html>
